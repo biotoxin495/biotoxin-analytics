@@ -1,0 +1,19 @@
+{
+  "name": "@biotoxin/analytics",
+  "version": "0.1.0",
+  "description": "Consent-first GA4 for Biotoxin portfolio websites",
+  "type": "module",
+  "private": true,
+  "sideEffects": ["./styles/consent.css"],
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js", "default": "./dist/index.js" },
+    "./react": { "types": "./react/index.d.ts", "import": "./react/index.js", "default": "./react/index.js" },
+    "./styles.css": "./styles/consent.css"
+  },
+  "files": ["dist", "react", "styles", "README.md", "docs"],
+  "scripts": { "build": "tsc -p tsconfig.json", "test": "node --test tests/*.test.mjs", "check": "npm run build && npm test && node --check react/index.js" },
+  "peerDependencies": { "react": ">=18 <20" },
+  "peerDependenciesMeta": { "react": { "optional": true } },
+  "devDependencies": { "typescript": "5.8.3" },
+  "engines": { "node": ">=20" }
+}

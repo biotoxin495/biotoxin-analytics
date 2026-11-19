@@ -1,0 +1,3 @@
+# React + Vite integration fixture
+
+Copy `analytics.ts` and `AnalyticsShell.tsx` into a React/Vite application with React Router v6/v7. Install the tagged package, configure `VITE_GA_MEASUREMENT_ID`, replace the example hostname/routes and set the actual privacy destination. This is an illustrative copy-in fixture (not a separately runnable Vite app). Keep analytics disabled until the GA4 settings and browser checks in the main README are complete. The example treats unrecognized routes as unsafe and stops tracking for that document; all sensitive workflows must be separately served without the SDK.
