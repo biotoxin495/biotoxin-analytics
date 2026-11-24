@@ -27,7 +27,7 @@ import { createAnalytics } from '@biotoxin/analytics';
 export const analytics = createAnalytics({
   measurementId: import.meta.env.VITE_GA_MEASUREMENT_ID,
   enabled: import.meta.env.PROD,
-  allowedHosts: ['budzets.biotoxin.dev'],
+  allowedHosts: ['civicdata.biotoxin.dev'],
   consentVersion: '1',
   pages: {
     home: {path: '/', title: 'Home'},
